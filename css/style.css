@@ -1,0 +1,120 @@
+:root {
+  /* Colors */
+  --clr-shade-darker: hsl(0, 0%, 1%);
+  --clr-shade-lighter: hsl(30, 5%, 45%);
+  --clr-tint-lighter: hsl(28, 100%, 97%);
+
+  --clr-blue: hsl(252, 66%, 62%);
+  --clr-yellow: hsl(28, 89%, 67%);
+  --clr-pink: hsl(0, 78%, 79%);
+  --clr-red: hsl(7, 77%, 66%);
+  --clr-cyan: hsl(172, 46%, 57%);
+  --clr-purple: hsl(314, 45%, 23%);
+  
+  --clr-body: --clr-shade-lighter;
+  --clr-heading: --clr-shade-darker;
+  --clr-anchor: var(--clr-tint-lighter);
+
+  --clr-card-one: var(--clr-blue);
+  --clr-card-two: var(--clr-yellow);
+  --clr-card-three: var(--clr-pink);
+  --clr-card-four: var(--clr-red);
+  --clr-card-five: var(--clr-cyan);
+  --clr-card-six: var(--clr-purple);
+
+  --clr-button-idle: var(--clr-shade-darker);
+  --clr-button-hover: var(--clr-blue);
+  --clr-button-alt-idle: var(--clr-red);
+  --clr-button-alt-hover: var(--clr-yellow);
+
+  /* Type */
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+  --fw-body: 400;
+  --fw-heading: 700;
+  --lh-body: 1.55;
+  --lh-heading: 1.25;
+
+  /* @link https://utopia.fyi/type/calculator?c=375,16,1.125,1440,18,1.2,7,2,&s=0.75|0.5|0.25,1.5|2|2.25|4|6|7.5,s-l|xl-2xl|3xl-4xl|3xl-2xl&g=s,l,xl,12 */
+  --size-0: clamp(1rem, 0.956rem + 0.1878vi, 1.125rem);
+  --size-1: clamp(1.4238rem, 1.2407rem + 0.7815vi, 1.944rem);
+  --size-2: clamp(1.802rem, 1.4509rem + 1.4983vi, 2.7994rem);
+  --size-3: clamp(2.2807rem, 1.6644rem + 2.6297vi, 4.0311rem);
+
+  --fs-body: var(--size-0);
+  --fs-heading-s: var(--size-1);
+  --fs-heading-m: var(--size-2);
+  --fs-heading-l: var(--size-3);
+
+  /* Determining typescale bounds
+     based on wireframes
+     for fluid type via utopia.fyi
+
+    Inline:     375px to 1440px (Mobile to Desktop)
+    Body:       16px  to 18px (Step 0)
+    Ratio:      1.125 to 1.2 (Major Second to Minor Third)
+
+    Heading S:  24px  to 32px -> Step 3 (23px   to 31px)
+    Heading M:  26px  to 40px -> Step 5 (29px   to 45px)
+    Heading L:  36px  to 56px -> Step 7 (36.5px to 64.5px)
+  */
+
+  /* Space */
+  /* @link https://utopia.fyi/space/calculator?c=375,16,1.125,1440,18,1.2,7,2,&s=0.75|0.5|0.25,1.5|2|2.25|4|6|7.5,s-l|xl-2xl|3xl-4xl|3xl-2xl&g=s,l,xl,12 */
+  --space-3xs: clamp(0.25rem, 0.228rem + 0.0939vi, 0.3125rem);
+  --space-2xs: clamp(0.5rem, 0.478rem + 0.0939vi, 0.5625rem);
+  --space-xs: clamp(0.75rem, 0.706rem + 0.1878vi, 0.875rem);
+  --space-s: clamp(1rem, 0.956rem + 0.1878vi, 1.125rem);
+  --space-m: clamp(1.5rem, 1.434rem + 0.2817vi, 1.6875rem);
+  --space-l: clamp(2rem, 1.912rem + 0.3756vi, 2.25rem);
+  --space-xl: clamp(2.25rem, 2.14rem + 0.4695vi, 2.5625rem);
+  --space-2xl: clamp(4rem, 3.8239rem + 0.7512vi, 4.5rem);
+  --space-3xl: clamp(6rem, 5.7359rem + 1.1268vi, 6.75rem);
+  --space-4xl: clamp(7.5rem, 7.1699rem + 1.4085vi, 8.4375rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, 0.14rem + 0.4695vi, 0.5625rem);
+  --space-2xs-xs: clamp(0.5rem, 0.368rem + 0.5634vi, 0.875rem);
+  --space-xs-s: clamp(0.75rem, 0.618rem + 0.5634vi, 1.125rem);
+  --space-s-m: clamp(1rem, 0.7579rem + 1.0329vi, 1.6875rem);
+  --space-m-l: clamp(1.5rem, 1.2359rem + 1.1268vi, 2.25rem);
+  --space-l-xl: clamp(2rem, 1.8019rem + 0.8451vi, 2.5625rem);
+  --space-xl-2xl: clamp(2.25rem, 1.4577rem + 3.3803vi, 4.5rem);
+  --space-2xl-3xl: clamp(4rem, 3.0317rem + 4.1315vi, 6.75rem);
+  --space-3xl-4xl: clamp(6rem, 5.1417rem + 3.662vi, 8.4375rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1rem, 0.5599rem + 1.8779vi, 2.25rem);
+  --space-3xl-2xl: clamp(4.5rem, 6.5282rem + -2.2535vi, 6rem);
+
+  --space-carousel: var(--space-s-l);
+  --space-card-gap: var(--space-m);
+  --space-nav: var(--space-xl-2xl);
+  --space-section: var(--space-3xl-4xl);
+  --space-section-inner: var(--space-3xl-2xl);
+  
+  /* Determining spacing bounds
+     based on wireframes
+     for fluid space via utopia.fyi
+
+    View:       Mobile   to Desktop
+    Carousel:   15px     to 30px (gap between images)
+    Card Gap:   24px     to 24px
+    Navs:       36px     to 77px (use for hero/cta to section as well)
+    Section:    100px    to 136px (use for cards to introduction) 
+    Sect-Inner: 100px    to 84px (use for intro to work to CTA)
+
+    S: 1 / M: 1.5 / L: 2 / XL: 2.25 / 2XL: 4 / 3XL: 6 / 4XL: 7.5
+    Required custom pairs:
+      S   to L
+      XL  to 2XL
+      3XL to 4XL
+      3XL to 2XL
+  */
+
+  /* Misc */
+  --button-border-radius: 1.75rem;
+  --button-width: 11rem; /* TO-DO: scale to 14.25rem */
+
+  --max-card-size: 22rem;
+  --max-wrapper-size: 70rem;
+}
