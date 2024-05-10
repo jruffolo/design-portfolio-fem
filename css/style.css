@@ -115,6 +115,11 @@
   --button-border-radius: 1.75rem;
   --button-width: 11rem; /* TO-DO: scale to 14.25rem */
 
-  --max-card-size: 22rem;
-  --max-wrapper-size: 70rem;
+  /* Card section split points are 43.125rem and 69.375rem */
+  --card-width: 22rem;
+  --card-height-s: 9.875rem;
+  --card-height-m: 11.5rem;
+  --card-height-l: 24rem;
+
+  --wrapper-inline-size: 70rem;
 }
