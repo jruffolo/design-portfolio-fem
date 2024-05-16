@@ -15,46 +15,54 @@
   
   <title>Frontend Mentor | Single-page design portfolio</title>
 </head>
-<body>
-  <header>
+<body class="flow">
+  <header class="cluster space-between">
     <img src="assets/logo.svg" alt="Logo made up of a black square with a white circle drawn inside">
     <a href="#">Free Consultation</a>
   </header>
-  <main>
+  <main class="flow">
     <article id="hero">
       <h1>Design solutions made easy</h1>
       <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
-      <ul>
-        <li>Graphic Design</li>
-        <li>UI/UX</li>
-        <li>Apps</li>
-        <li>Photography</li>
-        <li>Illustrations</li>
-        <li>Motion Graphics</li>
+      <ul class="cluster container" data-containerName="card-list">
+        <li id="graphic-design" data-listType="large">Graphic Design</li>
+        <div id="card-group-one" class="cluster">
+          <li id="ui-ux" data-listType="small">UI/UX</li>
+          <li id="apps" data-listType="small">Apps</li>
+          <li id="illustrations" data-listType="medium">Illustrations</li>
+        </div>
+        <div id="card-group-two" class="cluster">
+          <li id="photography" data-listType="medium">Photography</li>
+          <li id="motion-graphics" data-listType="medium">Motion Graphics</li>
+        </div>
       </ul>
     </article>
     <article id="meet-me">
       <img src="assets/image-amy.webp" alt="A portrait photo of Amy smiling in front of an abstract background">
-      <h2>I’m Amy, and I’d love to work on your next project</h2>
-      <p>
-        I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations
-        to complete mobile apps. I’m also handy with a camera!
-      </p>
-      <a href="">Free Consultation</a>
+      <div class="flow">
+        <h2>I’m Amy, and I’d love to work on your next project</h2>
+        <p>
+          I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations
+          to complete mobile apps. I’m also handy with a camera!
+        </p>
+        <a href="#" data-AnchorType="alt">Free Consultation</a>
+      </div>
     </article>
     <article id="work">
       <h3>My Work</h3>
     </article>
     <article id="cta">
-      <h2>Book a call with me</h2>
-      <p>
-        I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a
-        free consultation. Then we can move forward from there.
-      </p>
-      <a href="#">Free Consultation</a>
+      <div class="flow">
+        <h2>Book a call with me</h2>
+        <p>
+          I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a
+          free consultation. Then we can move forward from there.
+        </p>
+      </div>
+      <a href="#" data-anchorType="alt">Free Consultation</a>
     </article>
   </main>
-  <footer>
+  <footer class="cluster space-between">
     <img src="assets/logo.svg" alt="Logo made up of a black square with a white circle drawn inside">
     <a href="#">Free Consultation</a>
   </footer>
