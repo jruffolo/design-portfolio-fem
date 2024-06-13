@@ -17,11 +17,11 @@
 </head>
 <body class="flow">
   <header class="cluster space-between">
-    <img src="assets/logo.svg" alt="Logo made up of a black square with a white circle drawn inside">
+    <img src="assets/logo.svg" alt="Logo made up of a black square with a white circle inscribed inside">
     <a href="#">Free Consultation</a>
   </header>
   <main class="flow">
-    <article id="hero">
+    <article id="hero" class="center-children center-text">
       <h1>Design solutions made easy</h1>
       <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
       <ul class="cluster container" data-containerName="card-list">
@@ -37,33 +37,46 @@
         </div>
       </ul>
     </article>
-    <article id="meet-me">
-      <img src="assets/image-amy.webp" alt="A portrait photo of Amy smiling in front of an abstract background">
-      <div class="flow">
-        <h2>I’m Amy, and I’d love to work on your next project</h2>
-        <p>
-          I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations
-          to complete mobile apps. I’m also handy with a camera!
-        </p>
-        <a href="#" data-AnchorType="alt">Free Consultation</a>
+    <article id="meet-me" class="center-children container" data-containerName="meet-me">
+      <div class="switcher | size-wrapper">
+        <div><img class='center-self' src="assets/image-amy.webp" alt="A portrait photo of Amy smiling in front of an abstract background"></div>
+        <div class="flow">
+          <h2>I’m Amy, and I’d love to work on your next project</h2>
+          <p>
+            I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations
+            to complete mobile apps. I’m also handy with a camera!
+          </p>
+          <a href="#" data-AnchorType="alt">Free Consultation</a>
+        </div>
       </div>
     </article>
-    <article id="work">
+    <article id="work" class="flow | center-self center-text size-wrapper">
       <h3>My Work</h3>
-    </article>
-    <article id="cta">
-      <div class="flow">
-        <h2>Book a call with me</h2>
-        <p>
-          I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a
-          free consultation. Then we can move forward from there.
-        </p>
+      <div id="content-slider" class="full-bleed">
+        <ul>
+          <li><img src="assets/image-slide-1.jpg" alt=""></li>
+          <li><img src="assets/image-slide-2.jpg" alt=""></li>
+          <li><img src="assets/image-slide-3.jpg" alt=""></li>
+          <li><img src="assets/image-slide-4.jpg" alt=""></li>
+          <li><img src="assets/image-slide-5.jpg" alt=""></li>
+        </ul>
       </div>
-      <a href="#" data-anchorType="alt">Free Consultation</a>
+    </article>
+    <article id="cta" class="cta | container" data-containerName="cta">
+      <div class="cluster space-between center-self | flow dark-styling">
+        <div class="flow">
+          <h2>Book a call with me</h2>
+          <p>
+            I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a
+            free consultation. Then we can move forward from there.
+          </p>
+        </div>
+        <a href="#" data-anchorType="alt">Free Consultation</a>
+      </div>
     </article>
   </main>
   <footer class="cluster space-between">
-    <img src="assets/logo.svg" alt="Logo made up of a black square with a white circle drawn inside">
+    <img src="assets/logo.svg" alt="Logo made up of a black square with a white circle inscribed inside">
     <a href="#">Free Consultation</a>
   </footer>
 </body>
