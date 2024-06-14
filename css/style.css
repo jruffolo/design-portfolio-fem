@@ -125,11 +125,11 @@
   --card-height-l: 22.75rem;
 
   --bg-img-card-one: url('../assets/pattern-graphic-design.svg');
-  --bg-img-card-two: url('../assets/pattern-ui-ux.svg');
-  --bg-img-card-three: url('../assets/pattern-apps.svg');
-  --bg-img-card-four: url('../assets/pattern-illustrations.svg');
-  --bg-img-card-five: url('../assets/pattern-photography.svg');
-  --bg-img-card-six: url('../assets/pattern-motion-graphics.svg');
+  --bg-img-card-two: url('/assets/pattern-ui-ux.svg');
+  --bg-img-card-three: url('/assets/pattern-apps.svg');
+  --bg-img-card-four: url('/assets/pattern-illustrations.svg');
+  --bg-img-card-five: url('/assets/pattern-photography.svg');
+  --bg-img-card-six: url('/assets/pattern-motion-graphics.svg');
 
   --wrapper-inline-size: 70rem;
 }
@@ -140,6 +140,7 @@ body {
   font-size: var(--fs-body);
   background-color: var(--clr-tint-lighter);
   line-height: var(--lh-body);
+  overflow-x: hidden;
 }
 
 article,
